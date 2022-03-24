@@ -1,0 +1,19 @@
+version: "3.5"
+services:
+  sutom:
+    build:
+        context: .
+        dockerfile: Dockerfile
+    container_name: sutom
+    user: 1000:1000
+    volumes:
+      - .:/app
+    ports:
+        - 4000:4000
+    restart: "unless-stopped"
+    networks:
+        - mynetwork
+
+networks:
+    mynetwork:
+        external: true

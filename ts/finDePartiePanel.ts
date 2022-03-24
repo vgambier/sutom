@@ -30,7 +30,7 @@ export default class FinDePartiePanel {
       }
 
       navigator.clipboard
-        .writeText(this._resumeTexte + "\n\nhttps://sutom.nocle.fr")
+        .writeText(this._resumeTexte + "\n\nhttps://sutom.margoulin.ml/")
         .then(() => {
           NotificationMessage.ajouterNotification("Résumé copié dans le presse papier");
         })

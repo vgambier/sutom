@@ -1,6 +1,6 @@
 # SUTOM
 
-Jeu de lettres en ligne (et en français) basé sur Wordle. Le jeu se trouve à l'adresse https://sutom.nocle.fr
+Jeu de lettres en ligne (et en français) basé sur Wordle. Le jeu se trouve à l'adresse https://sutom.margoulin.ml/ (originellement https://sutom.nocle.fr)
 
 ## Contributions
 
@@ -30,6 +30,14 @@ Un Dockerfile est disponible pour pouvoir démarrer le site en local sans `npm`.
 docker build -t sutom .
 
 docker run -it --rm -p 4000:4000 sutom
+```
+
+### Avec Docker Compose
+
+Un fichier docker-compose.yml est également disponible:
+
+```
+docker-compose up
 ```
 
 ### Accès au site
